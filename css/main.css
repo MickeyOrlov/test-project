@@ -1,0 +1,244 @@
+*::-webkit-input-placeholder { /*подсказка в инпутах*/
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid { /*required-обязательно для заполнения*/
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+h1, h2, h3, h4 {
+	padding: 0;
+	margin: 0;
+}
+
+/*-----------------header-top-----------------------*/
+.header-top {
+	
+}
+.header-info {
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.header-left {float: left;}
+.header-right {float: right;}
+.header-left {
+	padding-top: 20px;
+}
+.header-right {
+	padding-top: 20px;
+}
+.header-phone {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+.header-button {
+	margin-top: 10px;
+	text-align: center;
+}
+.header-button a {
+	color: #000;
+	border: 2px solid #424242;
+	padding: 5px 20px;
+	border-radius: 10px;
+}
+.header-button a:hover {
+	background: #424242;
+	color: #fff;
+}
+
+/*-----------------header-menu-----------------------*/
+
+.header-menu {
+	background: #292d30;
+	margin-top: 20px;
+	font-size: 15px;
+	box-shadow: 0 0 40px rgba(0,0,0,0.9);
+}
+.header-menu ul {
+	padding-left: 120px;
+	margin: 0;
+
+}
+.header-menu li {
+	float: left; /* Выстраивание элементов списка в один ряд. */
+	list-style-type: none;
+}
+.header-menu a {
+	display: block; /* Изменение отображения на блочное для того чтобы иметь возможность задать внутренние отступы. */
+	padding: 15px 30px;  /* Внутри блочные отступы. */
+	color: #fff; /* Цвет текста в блоках меню. */
+	text-decoration: none; /* Устранение подчёркивания ссылок. */
+}
+.header-menu a:hover {
+	color: #fff;
+	background: #292D56;
+}
+
+/*-----------------header-center-----------------------*/
+.header-center {
+	background: url(../img/bg.jpg) center center no-repeat;
+	height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+.header-center-logo {
+	font-size: 80px;
+	text-transform: uppercase;
+	font-family: 'RobotoLight';
+	margin-top: 270px;
+	font-weight: 300;
+}
+.header-center-h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.header-center-about {
+	text-transform: uppercase;
+	margin-bottom: 30px;
+
+}
+.header-center-info-video {
+	margin-bottom: 30px;
+}
+.header-center-button-video a {
+	border: 1px solid #059feb;
+	color: #fff;
+	background: #059feb;
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+
+/*-----------------section-1-----------------------*/
+.section-1-box {
+	margin-top: 130px;
+}
+h2 {
+	text-align: center;
+	font-weight: bold;
+	font-family: "RobotoBold";
+	margin-top: 150px;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.section-1-logo {
+	border-left: 3px solid #059feb;
+	padding-left: 10px;
+}
+.section-1-text {
+	font-size: 17px;
+	line-height: 20px;
+}
+.section-1-about {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: "RobotoBold";
+}
+
+
+/*-----------------section-2-----------------------*/
+.section-2 {
+	background: #292d30;
+}
+.section-2 h2 {
+	color: #fff;
+}
+.section-2 img {
+	padding: 20px 40px;
+}
+.section-2 .last-img {
+	padding-left: 550px;
+	margin-bottom: 50px;
+}
+
+/*-----------------section-3-----------------------*/
+.section-3 h3 {
+	margin-top: 10px;
+
+}
+.box-pic img {
+	display: inline-block;
+	text-align: center;
+}
+.box-pic-last {
+	
+}
+
+.section-3-text {
+	text-align: center;
+}
+.section-3-box {
+	text-align: center;
+	margin-bottom: 80px;
+
+}
+.section-3 h2 {
+  /* чтобы линии не выходили за ширину блока заголовка */
+  overflow: hidden;
+}
+.section-3 h2:before,
+.section-3 h2:after {
+  content: '';
+  /* делаем линию строчно-блочной */
+  display: inline-block;
+
+  /* выравниваем вертикально по середине */
+  vertical-align: middle;
+
+  /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+  box-sizing: border-box;
+
+  /* установка ширины в 100% делает линию равной ширине тега заголовка
+  ** благодаря этому линия заполнит все свободное пространство
+  ** слева и справа от текста
+  */
+  width: 100%;
+  height: 3px;
+  background: #6CBD83;
+
+  /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
+  ** благодаря этому создается нужный отступ между линиями и текстом
+  */
+  border: solid #FFF;
+  border-width: 0 10px;
+}
+.title:before {
+  /* смещаем левую линию влево отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает слева от текста
+  */
+  margin-left: -100%;
+}
+.title:after {
+  /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает справа от текста
+  */
+  margin-right: -100%;
+  }
+  
